@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Movier" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movier" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJn-pj-gvC">
+                                <rect key="frame" x="82" y="65" width="250" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="D4H-qa-Cil"/>
+                                    <constraint firstAttribute="width" constant="250" id="Jtp-d1-EMH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHH-C7-kye">
+                                <rect key="frame" x="82" y="231" width="250" height="150"/>
+                                <color key="backgroundColor" red="0.94686526059999998" green="0.74031937120000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="AJ2-Sp-LxI"/>
+                                    <constraint firstAttribute="height" constant="150" id="ndj-2Q-E46"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" image="image-cover" title=""/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie's List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tJ-TC-ESk">
+                                <rect key="frame" x="82" y="380" width="250" height="21"/>
+                                <color key="backgroundColor" red="0.93421823929767212" green="0.75052092514294233" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="kI7-dl-kJd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" systemColor="labelColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YHH-C7-kye" secondAttribute="trailing" constant="82" id="1yz-82-l9a"/>
+                            <constraint firstItem="RJn-pj-gvC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="7vK-p7-UvK"/>
+                            <constraint firstItem="RJn-pj-gvC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="FvR-wZ-bvE"/>
+                            <constraint firstItem="YHH-C7-kye" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="JOc-qm-L8v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7tJ-TC-ESk" secondAttribute="trailing" constant="82" id="LZj-cf-QSu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RJn-pj-gvC" secondAttribute="trailing" constant="82" id="Oc3-GH-ERD"/>
+                            <constraint firstItem="7tJ-TC-ESk" firstAttribute="top" secondItem="RJn-pj-gvC" secondAttribute="bottom" constant="265" id="Roh-7t-hbC"/>
+                            <constraint firstItem="YHH-C7-kye" firstAttribute="top" secondItem="RJn-pj-gvC" secondAttribute="bottom" constant="116" id="X70-74-CA0"/>
+                            <constraint firstItem="7tJ-TC-ESk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="mex-v6-T9K"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="boutonList" destination="YHH-C7-kye" id="cyU-AP-lj6"/>
+                        <outlet property="titleMovier" destination="RJn-pj-gvC" id="Z8R-O4-34x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.637681159420293" y="22.767857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image-cover" width="250" height="150"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
