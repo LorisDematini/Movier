@@ -14,7 +14,7 @@ class MovierApi {
         var movies: [Movie] = []
         
         return Promise { seal in
-            AF.request("https://api.themoviedb.org/3/movie/top_rated?api_key=dd21c2df15fa3f1c86638f78d1775ef0&language=en-US&page=1").response { response in
+            AF.request("https://api.themoviedb.org/3/movie/top_rated?api_key=dd21c2df15fa3f1c86638f78d1775ef0").response { response in
                 let json = JSON(response.data as Any)
                 let moviesJSON = json.arrayValue
                 for movie in moviesJSON {
