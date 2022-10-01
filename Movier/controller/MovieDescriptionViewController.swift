@@ -11,7 +11,7 @@ class MovieDescriptionViewController: UIViewController {
     
     
     @IBOutlet weak var pictureImageView: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
+    
     @IBOutlet weak var overviewLabel: UILabel!
     
     var movie: Movie? = nil
@@ -22,7 +22,6 @@ class MovieDescriptionViewController: UIViewController {
         if let safeMovie = movie {
             
             self.title = safeMovie.title
-            self.titleLabel.text = " titre : \(safeMovie.title)"
             self.overviewLabel.text = safeMovie.overview
             
             if let url = URL(string: safeMovie.poster_path), let imgData = try? Data(contentsOf: url) {
