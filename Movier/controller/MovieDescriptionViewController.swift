@@ -20,14 +20,14 @@ class MovieDescriptionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let maxId = 88542
-        let minId = 62
+        
+        let urlBase = "https://image.tmdb.org/t/p/w300_and_h450_bestv2"
         if let safeMovie = movie {
             
             self.title = safeMovie.title
             self.overviewLabel.text = safeMovie.overview
             
-            if let url = URL(string: safeMovie.poster_path), let imgData = try? Data(contentsOf: url) {
+            if let url = URL(string: urlBase + safeMovie.poster_path), let imgData = try? Data(contentsOf: url) {
                 let image = UIImage(data: imgData)
                 pictureImageView.image = image
                 print("LIEN ICI : ")

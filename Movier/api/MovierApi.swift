@@ -12,14 +12,12 @@ import PromiseKit
 class MovierApi {
     static func getMovies() -> Promise<[Movie]> {
         var movies: [Movie] = []
-        
+        let link = "https://api.themoviedb.org/3/movie/now_playing?api_key=dd21c2df15fa3f1c86638f78d1775ef0&language=en-US"
         return Promise { seal in
-            AF.request("https://api.themoviedb.org/3/movie/top_rated?api_key=dd21c2df15fa3f1c86638f78d1775ef0&language=en-US").response { response in
+            AF.request(link).response { response in
                 let json = JSON(response.data as Any)
                 
                 if let movieJsonArray = json.dictionary?["results"]?.arrayValue {
-                    let movie = movieJsonArray[6]["tagline"]
-                    print(movie)
                     for movie in movieJsonArray {
                         movies.append(Movie(
                             id: movie["id"].intValue,
@@ -37,5 +35,48 @@ class MovierApi {
                 seal.fulfill(movies)
             }
         }
+    }
+    static func randomMovies() -> Promise<[Movie]> {
+        var movies: [Movie] = []
+        let numberMovie = 0
+        let minId = 62
+        let maxId = 88542
+        let linkBase = "https://api.themoviedb.org/3/movie/"
+        let linkFinal = "?api_key=dd21c2df15fa3f1c86638f78d1775ef0&language=en-US"
+        
+        return Promise { seal in
+            for i in 0...2 {
+                let randomValue = String(Int.random(in: minId...maxId))
+                print("\(linkBase)\(randomValue)\(linkFinal)")
+                
+                AF.request("\(linkBase)\(randomValue)\(linkFinal)").response { response in
+                    
+                    print("request ok")
+                    let json = JSON(response.data as Any)
+                    
+                    if let movieJsonArray = json.dictionary?["results"]?.arrayValue {
+                        
+                            print(movieJsonArray)
+                            /*movies.append(Movie(
+                                id: movieJsonArray["id"].intValue,
+                                title: movieJsonArray["title"].stringValue,
+                                overview: movieJsonArray["overview"].stringValue,
+                                release_date: movieJsonArray["release_date"].stringValue,
+                                poster_path: movieJsonArray["poster_path"].stringValue,
+                                vote_average: movieJsonArray["vote_average"].stringValue
+                                
+                                /*A COMPLETER*/))*/
+                        
+
+                    }
+                }
+            }
+            
+            while numberMovie < 10 {
+
+            }
+            seal.fulfill(movies)
+        }
+        
     }
 }
