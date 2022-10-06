@@ -127,22 +127,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="voteLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Cv-1N-3e9">
+                                <rect key="frame" x="107" y="708" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="kFd-7E-Nq9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="n4n-B6-LhT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="n4n-B6-LhT" firstAttribute="trailing" secondItem="BaV-Dx-gBX" secondAttribute="trailing" constant="32" id="ATn-O5-sgK"/>
+                            <constraint firstItem="n4n-B6-LhT" firstAttribute="trailing" secondItem="7Cv-1N-3e9" secondAttribute="trailing" constant="107" id="Llp-mU-NlO"/>
                             <constraint firstItem="1Hl-uR-boa" firstAttribute="top" secondItem="n4n-B6-LhT" secondAttribute="top" constant="49" id="LuC-jB-PKp"/>
                             <constraint firstItem="BaV-Dx-gBX" firstAttribute="top" secondItem="1Hl-uR-boa" secondAttribute="bottom" constant="216" id="RJr-QJ-bp4"/>
+                            <constraint firstItem="7Cv-1N-3e9" firstAttribute="leading" secondItem="n4n-B6-LhT" secondAttribute="leading" constant="107" id="Z1u-rT-l4V"/>
                             <constraint firstItem="1Hl-uR-boa" firstAttribute="leading" secondItem="n4n-B6-LhT" secondAttribute="leading" constant="87" id="eUr-qf-SMR"/>
                             <constraint firstItem="n4n-B6-LhT" firstAttribute="trailing" secondItem="1Hl-uR-boa" secondAttribute="trailing" constant="87" id="hh5-Kh-aU4"/>
                             <constraint firstItem="BaV-Dx-gBX" firstAttribute="leading" secondItem="n4n-B6-LhT" secondAttribute="leading" constant="32" id="oYY-H5-gd6"/>
+                            <constraint firstItem="7Cv-1N-3e9" firstAttribute="top" secondItem="BaV-Dx-gBX" secondAttribute="bottom" constant="59" id="udF-V0-K9k"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="r7r-Nc-56n"/>
                     <connections>
                         <outlet property="overviewLabel" destination="BaV-Dx-gBX" id="6Fc-IW-l73"/>
                         <outlet property="pictureImageView" destination="1Hl-uR-boa" id="mmD-Ia-fPD"/>
+                        <outlet property="voteLabel" destination="7Cv-1N-3e9" id="eRt-tW-6kH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D2q-BQ-eRd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
