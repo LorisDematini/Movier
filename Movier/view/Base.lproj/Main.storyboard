@@ -116,6 +116,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Rkl-h7-Dtz" kind="show" identifier="segueToPickMovieDescription" id="m4E-yZ-qAY"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -128,6 +131,62 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qNn-1D-slx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="808"/>
+        </scene>
+        <!--Pick Movie Description View Controller-->
+        <scene sceneID="IQw-XQ-C3Q">
+            <objects>
+                <viewController id="Rkl-h7-Dtz" customClass="PickMovieDescriptionViewController" customModule="Movier" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qh2-1H-vya">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="overview" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIR-nt-TwR">
+                                <rect key="frame" x="32" y="192" width="350" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="Ual-Ob-WVh"/>
+                                    <constraint firstAttribute="height" constant="200" id="ZrH-l5-dbM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vti-kH-2uw">
+                                <rect key="frame" x="87" y="56" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="voteLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMZ-Ah-Llm">
+                                <rect key="frame" x="107" y="400" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="CMe-2q-DLL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LB5-WD-Wg9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FIR-nt-TwR" firstAttribute="leading" secondItem="LB5-WD-Wg9" secondAttribute="leading" constant="32" id="55g-M5-Hhd"/>
+                            <constraint firstItem="eMZ-Ah-Llm" firstAttribute="top" secondItem="FIR-nt-TwR" secondAttribute="bottom" constant="8" symbolic="YES" id="6g8-jC-6ZK"/>
+                            <constraint firstItem="vti-kH-2uw" firstAttribute="leading" secondItem="LB5-WD-Wg9" secondAttribute="leading" constant="87" id="CL4-VW-lFc"/>
+                            <constraint firstItem="FIR-nt-TwR" firstAttribute="top" secondItem="vti-kH-2uw" secondAttribute="bottom" constant="8" symbolic="YES" id="EAb-z2-7zM"/>
+                            <constraint firstItem="eMZ-Ah-Llm" firstAttribute="leading" secondItem="LB5-WD-Wg9" secondAttribute="leading" constant="107" id="PHA-pk-Cle"/>
+                            <constraint firstItem="LB5-WD-Wg9" firstAttribute="trailing" secondItem="vti-kH-2uw" secondAttribute="trailing" constant="87" id="fpn-5m-Q9a"/>
+                            <constraint firstItem="LB5-WD-Wg9" firstAttribute="trailing" secondItem="FIR-nt-TwR" secondAttribute="trailing" constant="32" id="hhs-9D-ZEF"/>
+                            <constraint firstItem="LB5-WD-Wg9" firstAttribute="trailing" secondItem="eMZ-Ah-Llm" secondAttribute="trailing" constant="107" id="ljT-bR-SPS"/>
+                            <constraint firstItem="vti-kH-2uw" firstAttribute="top" secondItem="LB5-WD-Wg9" secondAttribute="top" id="okT-gf-r2K"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7qj-Ul-Iv6"/>
+                    <connections>
+                        <outlet property="overviewLabelPick" destination="FIR-nt-TwR" id="FUl-EL-NCX"/>
+                        <outlet property="pictureImageViewPick" destination="vti-kH-2uw" id="97j-pb-b0U"/>
+                        <outlet property="voteLabelPick" destination="eMZ-Ah-Llm" id="uhs-EJ-gDu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MBb-ej-0nO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044.9275362318842" y="807.58928571428567"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yqf-YG-zDF">

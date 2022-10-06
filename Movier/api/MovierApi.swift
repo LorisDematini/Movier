@@ -38,45 +38,41 @@ class MovierApi {
     }
     static func randomMovies() -> Promise<[Movie]> {
         var movies: [Movie] = []
-        let numberMovie = 0
         let minId = 62
         let maxId = 88542
         let linkBase = "https://api.themoviedb.org/3/movie/"
         let linkFinal = "?api_key=dd21c2df15fa3f1c86638f78d1775ef0&language=en-US"
+        var testMovie = 0
         
-        return Promise { seal in
-            for i in 0...2 {
-                let randomValue = String(Int.random(in: minId...maxId))
-                print("\(linkBase)\(randomValue)\(linkFinal)")
-                
-                AF.request("\(linkBase)\(randomValue)\(linkFinal)").response { response in
+            return Promise { seal in
+               // while testMovie != 1 {
+                    var randomValue = String(Int.random(in: minId...maxId))
+                    print("\(linkBase)\(randomValue)\(linkFinal)")
                     
-                    print("request ok")
-                    let json = JSON(response.data as Any)
-                    
-                    if let movieJsonArray = json.dictionary?["results"]?.arrayValue {
+                    AF.request("\(linkBase)\(randomValue)\(linkFinal)").response { response in
                         
-                            print(movieJsonArray)
-                            /*movies.append(Movie(
-                                id: movieJsonArray["id"].intValue,
-                                title: movieJsonArray["title"].stringValue,
-                                overview: movieJsonArray["overview"].stringValue,
-                                release_date: movieJsonArray["release_date"].stringValue,
-                                poster_path: movieJsonArray["poster_path"].stringValue,
-                                vote_average: movieJsonArray["vote_average"].stringValue
+                        print("request ok")
+                        let json = JSON(response.data as Any)
+                        
+                        if let movieJsonArray = json.dictionary {
+                            //if (movieJsonArray["success"] != nil) == false{
+                                movies.append(Movie(
+                                    id: movieJsonArray["id"]!.intValue,
+                                    title: movieJsonArray["title"]!.stringValue,
+                                    overview: movieJsonArray["overview"]!.stringValue,
+                                    release_date: movieJsonArray["release_date"]!.stringValue,
+                                    poster_path: movieJsonArray["poster_path"]!.stringValue,
+                                    vote_average: movieJsonArray["vote_average"]!.stringValue
+                                    
+                                    /*A COMPLETER*/))
+                                //testMovie = 1
+                            //print(movieJsonArray["title"])
+                            //}else{
                                 
-                                /*A COMPLETER*/))*/
-                        
-
+                            //}
                     }
+                    seal.fulfill(movies)
                 }
             }
-            
-            while numberMovie < 10 {
-
-            }
-            seal.fulfill(movies)
         }
-        
     }
-}
