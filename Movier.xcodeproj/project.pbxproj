@@ -26,6 +26,8 @@
 		0881793D28F027BC00C10129 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0881793C28F027BC00C10129 /* Actor.swift */; };
 		0881793F28F02C8600C10129 /* ActorApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0881793E28F02C8600C10129 /* ActorApi.swift */; };
 		0881794128F02EDA00C10129 /* ActorDescritptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0881794028F02EDA00C10129 /* ActorDescritptionViewController.swift */; };
+		0881794328F051E800C10129 /* ActorMovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0881794228F051E800C10129 /* ActorMovieListViewController.swift */; };
+		0881794528F0527F00C10129 /* ActorMovieDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0881794428F0527F00C10129 /* ActorMovieDescriptionViewController.swift */; };
 		6D00DC28F79FC537A73CD33B /* Pods_Movier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A9424BCEF8C8168CA24C4E /* Pods_Movier.framework */; };
 		A87E64FA040865C9694D3B6D /* Pods_Movier_MovierUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A86BE837EF8A5BE61251D60 /* Pods_Movier_MovierUITests.framework */; };
 		CEFE251BD37CFEAB0AEAA0C6 /* Pods_MovierTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96F41C7D6BD0FBFC8B38B8A /* Pods_MovierTests.framework */; };
@@ -72,6 +74,8 @@
 		0881793C28F027BC00C10129 /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
 		0881793E28F02C8600C10129 /* ActorApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorApi.swift; sourceTree = "<group>"; };
 		0881794028F02EDA00C10129 /* ActorDescritptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorDescritptionViewController.swift; sourceTree = "<group>"; };
+		0881794228F051E800C10129 /* ActorMovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorMovieListViewController.swift; sourceTree = "<group>"; };
+		0881794428F0527F00C10129 /* ActorMovieDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorMovieDescriptionViewController.swift; sourceTree = "<group>"; };
 		503854F78040C1D4EA6A2532 /* Pods-MovierTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovierTests.release.xcconfig"; path = "Target Support Files/Pods-MovierTests/Pods-MovierTests.release.xcconfig"; sourceTree = "<group>"; };
 		54BC7FC1D56202076DBA0CD7 /* Pods-Movier-MovierUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movier-MovierUITests.release.xcconfig"; path = "Target Support Files/Pods-Movier-MovierUITests/Pods-Movier-MovierUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5A86BE837EF8A5BE61251D60 /* Pods_Movier_MovierUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movier_MovierUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,6 +206,8 @@
 				08348B8828EF0ED5002EEC0F /* PickMovieDescriptionViewController.swift */,
 				0881793A28F0264000C10129 /* ActorListViewController.swift */,
 				0881794028F02EDA00C10129 /* ActorDescritptionViewController.swift */,
+				0881794228F051E800C10129 /* ActorMovieListViewController.swift */,
+				0881794428F0527F00C10129 /* ActorMovieDescriptionViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -475,8 +481,10 @@
 				080F476628E6E8940071B053 /* AppDelegate.swift in Sources */,
 				0881793F28F02C8600C10129 /* ActorApi.swift in Sources */,
 				0881793D28F027BC00C10129 /* Actor.swift in Sources */,
+				0881794328F051E800C10129 /* ActorMovieListViewController.swift in Sources */,
 				080F479F28E716770071B053 /* Movie.swift in Sources */,
 				080F479A28E6E8D10071B053 /* MovieDescriptionViewController.swift in Sources */,
+				0881794528F0527F00C10129 /* ActorMovieDescriptionViewController.swift in Sources */,
 				08348B8928EF0ED5002EEC0F /* PickMovieDescriptionViewController.swift in Sources */,
 				080F47A128E73B8F0071B053 /* MovieListViewController.swift in Sources */,
 				080F479D28E6F9990071B053 /* MovierApi.swift in Sources */,

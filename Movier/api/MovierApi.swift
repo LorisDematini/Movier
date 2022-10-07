@@ -35,36 +35,6 @@ class MovierApi {
         }
     }
     
-    /*static func chooseMovie() -> String{
-        var movies: [Movie] = []
-        let minId = 62
-        let maxId = 88542
-        let linkBase = "https://api.themoviedb.org/3/movie/"
-        let linkFinal = "?api_key=dd21c2df15fa3f1c86638f78d1775ef0"
-        
-        let randomValue = String(Int.random(in: minId...maxId))
-        print("\(linkBase)\(randomValue)\(linkFinal)")
-                    
-        AF.request("\(linkBase)\(randomValue)\(linkFinal)").response { response in
-                        
-                //print("request ok")
-            let json = JSON(response.data as Any)
-                            
-            if let movieJsonArray = json.dictionary {
-                    //let noteMin = movieJsonArray["vote_average"]
-                    //print(noteMin)
-                    //&& movieJsonArray["vote_average"] >= 7
-                if (movieJsonArray["success"] == nil){
-                    print ("\(linkBase)\(randomValue)\(linkFinal)")
-                    return "\(linkBase)\(randomValue)\(linkFinal)"
-                }
-                else{
-                    chooseMovie()
-                }
-            }
-        }
-    }*/
-    
     static func randomMovies() -> Promise<[Movie]> {
         var movies: [Movie] = []
         let minId = 62
@@ -82,10 +52,7 @@ class MovierApi {
                     let json = JSON(response.data as Any)
                         
                     if let movieJsonArray = json.dictionary {
-                        //let noteMin = movieJsonArray["vote_average"]
-                        //print(noteMin)
-                        //&& movieJsonArray["vote_average"] >= 7
-                        //&& movieJsonArray["original_language"] == "en"
+                        //&& movieJsonArray["vote_average"] >= 8
                         if (movieJsonArray["success"] == nil ){
                             movies.append(Movie(
                                 id: movieJsonArray["id"]!.intValue,
