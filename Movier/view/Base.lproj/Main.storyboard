@@ -96,7 +96,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94686526059999998" green="0.74031937120000002" blue="0.25453931089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YHH-C7-kye" secondAttribute="trailing" constant="82" id="6Pw-KG-a3Q"/>
                             <constraint firstItem="RJn-pj-gvC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="7vK-p7-UvK"/>
@@ -141,7 +141,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="VmA-Mu-8uN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94686526059999998" green="0.74031937120000002" blue="0.25453931089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="SO2-uJ-gTb">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
@@ -150,6 +150,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.94686526059999998" green="0.74031937120000002" blue="0.25453931089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <segue destination="Rkl-h7-Dtz" kind="show" identifier="segueToPickMovieDescription" id="m4E-yZ-qAY"/>
                                 </connections>
@@ -198,7 +199,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LB5-WD-Wg9"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94686526059999998" green="0.74031937120000002" blue="0.25453931089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="LB5-WD-Wg9" firstAttribute="trailing" secondItem="eMZ-Ah-Llm" secondAttribute="trailing" constant="107" id="9XJ-pg-5QQ"/>
                             <constraint firstItem="vti-kH-2uw" firstAttribute="top" secondItem="LB5-WD-Wg9" secondAttribute="top" constant="21" id="aVv-G2-vuw"/>
@@ -246,7 +247,11 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="p1v-IS-B5i">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94686526059999998" green="0.74031937120000002" blue="0.25453931089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexColor" red="0.94686526059999998" green="0.74031937120000002" blue="0.25453931089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="sectionIndexBackgroundColor" red="0.94686526059999998" green="0.74031937120000002" blue="0.25453931089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="sectionIndexTrackingBackgroundColor" red="0.94686526059999998" green="0.74031937120000002" blue="0.25453931089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="45" id="P7S-Ja-8RH">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="45"/>
@@ -255,6 +260,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="384.5" height="45"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.94686526059999998" green="0.74031937120000002" blue="0.25453931089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <segue destination="zjW-pL-BMy" kind="show" identifier="segueToMovieDescription" id="FDW-qM-J9L"/>
                                 </connections>
@@ -306,7 +312,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="n4n-B6-LhT"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94509803921568625" green="0.74117647058823533" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="n4n-B6-LhT" firstAttribute="trailing" secondItem="1Hl-uR-boa" secondAttribute="trailing" constant="87" id="1wi-W6-W4m"/>
                             <constraint firstItem="7Cv-1N-3e9" firstAttribute="leading" secondItem="n4n-B6-LhT" secondAttribute="leading" constant="107" id="2i2-QO-Hwl"/>
@@ -370,7 +376,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="agy-qf-3kP"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94686526059999998" green="0.74031937120000002" blue="0.25453931089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="agy-qf-3kP" firstAttribute="trailing" secondItem="je2-6H-ss8" secondAttribute="trailing" constant="82" id="0Ls-x5-D5x"/>
                             <constraint firstItem="fan-ds-sPv" firstAttribute="top" secondItem="d0K-G8-hJn" secondAttribute="bottom" constant="157" id="0Ry-Je-TZ7"/>
@@ -398,7 +404,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="9dZ-SZ-xIP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94686526059999998" green="0.74031937120000002" blue="0.25453931089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="tKY-9z-QCC">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
@@ -407,6 +413,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.94686526059999998" green="0.74031937120000002" blue="0.25453931089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <segue destination="ke8-bB-t9R" kind="show" identifier="segueToActorDescription" id="ws1-w0-5sT"/>
                                 </connections>
@@ -464,7 +471,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="zjN-Np-PJ8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94686526059999998" green="0.74031937120000002" blue="0.25453931089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Jus-7w-1ZH">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
@@ -473,6 +480,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.94686526059999998" green="0.74031937120000002" blue="0.25453931089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <segue destination="rna-7N-GYU" kind="show" identifier="segueToActorMovieDescription" id="aAj-c7-SPk"/>
                                 </connections>
@@ -524,7 +532,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bib-z6-NuG"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94686526059999998" green="0.74031937120000002" blue="0.25453931089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="X2h-vP-Nhu" firstAttribute="top" secondItem="ERM-Z7-gn4" secondAttribute="bottom" constant="50" id="1cB-gu-ay2"/>
                             <constraint firstItem="Bib-z6-NuG" firstAttribute="trailing" secondItem="Nf3-fv-seb" secondAttribute="trailing" constant="107" id="5kd-e0-X4r"/>
@@ -574,9 +582,6 @@
         <image name="image-cover" width="250" height="150"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
