@@ -41,38 +41,43 @@ class MovierApi {
         let minId = 62
         let maxId = 88542
         let linkBase = "https://api.themoviedb.org/3/movie/"
-        let linkFinal = "?api_key=dd21c2df15fa3f1c86638f78d1775ef0&language=en-US"
-        var testMovie = 0
+        let linkFinal = "?api_key=dd21c2df15fa3f1c86638f78d1775ef0"
         
-            return Promise { seal in
-               // while testMovie != 1 {
-                    var randomValue = String(Int.random(in: minId...maxId))
-                    print("\(linkBase)\(randomValue)\(linkFinal)")
+        return Promise { seal in
+                let randomValue = String(Int.random(in: minId...maxId))
+                print("\(linkBase)\(randomValue)\(linkFinal)")
                     
-                    AF.request("\(linkBase)\(randomValue)\(linkFinal)").response { response in
+                AF.request("\(linkBase)\(randomValue)\(linkFinal)").response { response in
                         
-                        print("request ok")
-                        let json = JSON(response.data as Any)
+                    //print("request ok")
+                    let json = JSON(response.data as Any)
                         
-                        if let movieJsonArray = json.dictionary {
-                            //if (movieJsonArray["success"] != nil) == false{
-                                movies.append(Movie(
-                                    id: movieJsonArray["id"]!.intValue,
-                                    title: movieJsonArray["title"]!.stringValue,
-                                    overview: movieJsonArray["overview"]!.stringValue,
-                                    release_date: movieJsonArray["release_date"]!.stringValue,
-                                    poster_path: movieJsonArray["poster_path"]!.stringValue,
-                                    vote_average: movieJsonArray["vote_average"]!.stringValue
+                    if let movieJsonArray = json.dictionary {
+                        //let noteMin = movieJsonArray["vote_average"]
+                        //print(noteMin)
+                        //&& movieJsonArray["vote_average"] >= 7
+                        if (movieJsonArray["success"] == nil){
+                            movies.append(Movie(
+                                id: movieJsonArray["id"]!.intValue,
+                                title: movieJsonArray["title"]!.stringValue,
+                                overview: movieJsonArray["overview"]!.stringValue,
+                                release_date: movieJsonArray["release_date"]!.stringValue,
+                                poster_path: movieJsonArray["poster_path"]!.stringValue,
+                                vote_average: movieJsonArray["vote_average"]!.stringValue
                                     
-                                    /*A COMPLETER*/))
-                                //testMovie = 1
+                                /*A COMPLETER*/))
+                            seal.fulfill(movies)
+                            print("LE FILM EST OK")
                             //print(movieJsonArray["title"])
-                            //}else{
-                                
-                            //}
+                        }else{
+                            randomMovies()
+                            print("LE FILM EST PAS OK")
+                        }
                     }
-                    seal.fulfill(movies)
+                    
+                    }
                 }
+            
             }
-        }
-    }
+        
+}
