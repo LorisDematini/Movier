@@ -30,8 +30,6 @@ class MovieDescriptionViewController: UIViewController {
             if let url = URL(string: urlBase + safeMovie.poster_path), let imgData = try? Data(contentsOf: url) {
                 let image = UIImage(data: imgData)
                 pictureImageView.image = image
-                print("LIEN ICI : ")
-                print(url)
             }
             let note = String(safeMovie.vote_average.prefix(3))
             self.voteLabel.text = "Audience Rating : " + note + "/10"

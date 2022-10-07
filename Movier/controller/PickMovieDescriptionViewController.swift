@@ -20,6 +20,7 @@ class PickMovieDescriptionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         let urlBase = "https://image.tmdb.org/t/p/w300_and_h450_bestv2"
         if let safeMovie = movie {
             
