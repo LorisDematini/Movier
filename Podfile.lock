@@ -5,7 +5,7 @@ PODS:
     - PromiseKit/Foundation (= 6.3.5)
     - PromiseKit/UIKit (= 6.3.5)
   - PromiseKit/CorePromise (6.3.5)
-  - PromiseKit/Foundation (6.3.5):
+  - PromiseKit/Foundation (6.3.5): 
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (6.3.5):
     - PromiseKit/CorePromise
