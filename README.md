@@ -12,4 +12,4 @@ Movier est basé sur l'API de IMDB <https://imdb-api.com/API>
   L'application propose aussi un film aléatoire parmi l'entièreté du catalogue de IMDB.
 
 3. Liste acteurs :
-  Movier permet aussi d'avoir une liste aléatoire d'acteurs auquel vous pourrez accéder (films, bio, ...)
+  Movier permet aussi d'avoir une liste aléatoire d'acteurs auquel vous pourrez accéder (films, bio, ...).
