@@ -6,7 +6,7 @@ target 'Movier' do
   use_frameworks!
 
   # Pods for Movier
-
+ 
   pod "PromiseKit", "~> 6.3.4"
   pod 'Alamofire', '5.4.0'
   pod 'SwiftyJSON', '~> 4.0'
